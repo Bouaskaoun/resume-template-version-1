@@ -1,0 +1,168 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.1.5, 1 December 2018) written by
+% LianTze Lim (liantze@gmail.com), based on the
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you are using \orcid or academicons
+%% icons, make sure you have the academicons
+%% option here, and compile with XeLaTeX
+%% or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper,ragged2e]{altacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages.
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm}
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Carlito}
+\else
+  % If using pdflatex:
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage[default]{lato}
+\fi
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{3E0097}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{37474F}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Full Name}
+\tagline{Looking for a Bachelor (PFE) internship in Finance and Actuarial Science }
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+\photo{3cm}{profile.png}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+    \email{fullname@edu.uca.ma}
+    \phone{+212 22 200 314}
+    \location{Marrakesh, Morocco}
+    \linkedin{linkedin.com/in/}
+    %\github{github.com/MeddahAbdellah}
+%   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+%\begin{rSection}{Profile}
+\cvsection[page1sidebar]{PROFILE}
+{\bf Hard-working and passionate Financial Engineering student, who enjoy working  in team-oriented environments with a strong attention to detail and accuracy.\\
+I have an excellent academic experience, my background includes a Bachelor in Modelling for Industry and Services engineering. Proven self-motivator and pragmatic communicator who works well independently. Extremely fast-learner with strong mathematics and data  skills.} 
+%I have passion for reaserch in the field of Finance and Actuarial Science as well as building statistical models.}
+
+%\end{rSection}
+\cvsection{Education}
+\cvevent{Bachelor’s in Modelling for Industry and Services engineering}{National Engineering School of Morocco}{2020 - 2023}{Marrakesh, Morocco}{\textbf{Subjects:}}
+\begin{itemize}
+    
+
+
+   \item { \textbf{Mathematics:} Statistics, Probability, Stochastic Calculus, Optimization, Discrete Models in Finance, Numerical Methods in Finance, Stochastic Models in Finance.}
+    
+    
+    \item {\textbf{Finance and Actuarial Science:} Fundamentals of Finance, Non-life Insurance, Life Insurance, Risk measure, Credit Risk Management, Banking Finance, Econometrics, Accounting, Economy.}
+    
+    
+    \item {\textbf{Data science:} Databases, Data analysis, Data mining, Machine Learning, Big data, Deep learning.}
+    
+    
+    \item {Lean management, Project management, Strategy and business creation, Operations research and optimisation, Entrepreneurship and innovation.}
+\end{itemize}
+
+
+\cvevent{Preparatory Cycle for Engineering Studies: Physics, Mathematics}{Preparatory institute for engineering studies \hfill \faMortarBoard Rank: 211/1500}{2018 -- 2020}{Marrakesh, Morocco}
+
+
+\cvevent{Mathematics Baccalaureate Diploma }{Ibn Kholdoun  High School \hfill \faMortarBoard Score: 15.48/20  }{2018}{Marrakesh, Morocco}
+
+ 
+
+ 
+\cvsection{PROJECTS}
+
+\textcolor{SlateGrey}{\textbf{Pricing and hedging of options in the presence of transaction costs: Black-Scholes Model and Leland Model}}
+\newline
+
+\begin{itemize}
+    \item Studying a modified version of the Black-Scholes option pricing model that considers transaction costs by combining knowledge of Brownian motion and Itô process with the mathematical tools from probabilistic theories and statistical analysis.\\
+   { \textbf{Key Words:} Python, Pricing, Hedging, Transaction Costs.}
+\end{itemize}
+
+\textcolor{SlateGrey}{\textbf{House rent prices predection in Marrakesh}}
+\newline
+
+\begin{itemize}
+    \item Optimizing several Machine Learning models such as deterministic, frequentist and Bayesian models.\\
+    { \textbf{Key Words:} Python, Optimisation, Machine Learning.}
+\end{itemize}
+
+
+\textcolor{SlateGrey}{\textbf{ Simulation of a probabilistic model of COVID-19 evolution (SEIR model)}}
+\newline
+
+\begin{itemize}
+    \item Simulation of a probabilistic random variables of the SEIR model to observe the evolution of Covid-19 pandemic and estimation with Monte Carlo.\\
+   {\textbf{Key Words:} SEIR, Covid-19, Matlab, Prbabilistic theories, Monte Carlo}
+\end{itemize}
+
+
+%\textcolor{SlateGrey}{\textbf{Software (Frontend)}}
+%\newline
+
+%\begin{itemize}
+    %\item Multi-platform Apps (Cordova, PhonegapBuild, Ionic, QT).
+%\end{itemize}
+
+%\cvevent{Aircraft Maintenance Engineering Internship }{Air %Algerie}{sep 2017 -- Jan 2018}{Algeria, Algiers}
+%\begin{itemize}
+ %   \item Establishment of a Peer-to-peer ATC communication %simulation.
+   % \item Troubleshooting and maintnance of a weather Radar .
+%\end{itemize}
+
+
+\clearpage
+
+\end{document}
