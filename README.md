@@ -1,5 +1,5 @@
 # resume-template-version-1
 Resume template compiled with LaTeX.
 <div>
-<img src='resume.jpg'/>
+<img src='resume.png'/>
 </div>
