@@ -1,5 +1,6 @@
-# resume-template-version-1
-Resume template compiled with LaTeX.
-<div>
-<img src='resume.png'/>
-</div>
+# resume
+LaTeX template for my personal resume
+
+Use it on overleaf: [Overleaf](https://www.overleaf.com/)
+
+![Resume Preview](resume.png)
